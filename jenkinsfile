@@ -7,7 +7,7 @@ node {
     }
     stage('Build') {
         echo 'Building....'
-	withDotNet(sdk: "latest") {
+	withDotNet(sdk: "9.0.101") {
 		sh 'dotnet --version'
    		sh 'dotnet build ConsoleApp1'
 		echo 'Building new feature'
